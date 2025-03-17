@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-image: url('./images/background.jpg');
     background-size: cover;
@@ -53,8 +54,8 @@ body {
 }
 
 .nav-links a.active {
-    color: #F2A35E;
-    border-bottom: 2px solid #ffcc00;
+    color: #f2c185;
+    border-bottom: 2px solid #f2c185;
 }
 .nav-links li {
     display: inline;
@@ -160,7 +161,7 @@ body {
 
 .footer {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -185,7 +186,6 @@ body {
     text-decoration: underline;
 }
 
-/* Ensure footer stays at the bottom */
 html, body {
     height: 100%;
     display: flex;
@@ -195,3 +195,51 @@ html, body {
 .main-content {
     flex: 1;
 }
+
+/* Dropdown Bootstrap adjustements*/
+.dropdown-center {
+    position: fixed; 
+    top: 10px;
+    left: 660px;
+    z-index: 1000; 
+}
+
+
+.dropdown-center .btn {
+    background-color: #8F5BA6; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.dropdown-center .btn:hover {
+    background-color: #5c0ba5; 
+}
+
+
+.dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 180px;
+    right: 0;
+    left: auto;
+}
+
+
+.dropdown-menu .dropdown-item {
+    background-color: purple;
+    color: white; 
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ff5733;
+    color: white;
+}
+
+/* Bootstrap end*/
