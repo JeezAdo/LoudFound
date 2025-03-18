@@ -243,3 +243,80 @@ html, body {
 }
 
 /* Bootstrap end*/
+
+/* Event Gallery Grid */
+.event-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Individual Event Box */
+.event-box {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Makes it square */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.event-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Event Info Overlay */
+.event-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Title & Date Row */
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+/* Title & Date Styling */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+}
+
+/* Description Hidden Initially */
+.description {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect: Move Title/Date Up, Reveal Description */
+.event-box:hover .title-date {
+    transform: translateY(-20px);
+}
+
+.event-box:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slight Zoom Effect */
+.event-box:hover img {
+    transform: scale(1.05);
+}
