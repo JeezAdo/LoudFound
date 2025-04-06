@@ -496,13 +496,13 @@ html, body {
 .instagram-feed {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     margin-bottom: 20px;
 }
 
 .instagram-feed img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
