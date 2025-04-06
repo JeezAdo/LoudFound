@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Rock Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<header>
+    <div class="dropdown-center">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Corporate
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="corporate.html#team">Team</a></li>
+        <li><a class="dropdown-item" href="corporate.html#production">Production</a></li>
+        <li><a class="dropdown-item" href="corporate.html#content">Content</a></li>
+        <li><a class="dropdown-item" href="corporate.html#marketing">Marketing</a></li>
+        <li><a class="dropdown-item" href="corporate.html#management">Management</a></li>
+    </ul>
+  </div>
+</header>
+<body>
+    <div class="logo">
+        <img src="./images/logotransparent-8.png">
+    </div>
+    <nav class="navigation">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="create.html">Create Jam Session</a></li>
+        </ul>
+      <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61573837350460"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/loud.andfound/"><img src="./images/instagram.png" alt="Instagram"></a>
+        </div> 
+    </nav>
+
+    <div class="session1 info">
+    
+    <h2 style="text-align: center;">How to Create an Epic Jam Session 🎸🎶</h2>
+    <p>So, you’re ready to bring musicians together and create an unforgettable jam session? Here’s a simple guide to setting up your session the right way!</p>
+
+    <h2>1️⃣ Choose the Right Place</h2> 
+        
+        <p>Pick a spot where everyone can comfortably play their instruments. It could be a music studio, a cozy bar, a friend’s garage, or even an outdoor space (just check for noise restrictions!). Make sure there’s enough room for everyone and access to power if needed.</p>
+        
+        
+        <h2>2️⃣ Set a Date & Time</h2>
+        
+       <p>Find a time that works for most musicians. Consider:</p>
+       <p>✅ Weekends or evenings for better availability.</p>
+       <p>✅ A time frame that gives everyone enough space to warm up and play freely.</p>
+        
+        
+        <h2>3️⃣ Decide on the Maximum Number of People</h2>
+        
+        <p>You don’t want a chaotic session where nobody gets a chance to play. Limit the number of attendees based on the space and the type of jam session you want.</p>
+        
+        
+        <h2>4️⃣ Pick a Jam Style</h2>
+        
+       <p>Not every musician can play every genre, so make it clear what style your jam will focus on. Some options:</p> 
+       <p>🎸 Rock – For those who love classic and alternative vibes.</p> 
+       <p>🎷 Jazz – Improv-heavy and great for creativity.</p>
+       <p>🎵 Blues – Smooth and soulful.</p>
+       <p>🥁 Funk – If you want groovy basslines and rhythm.</p> 
+       <p>🤘 Other – Let people know if it’s a mix of styles!</p>
+        
+        
+        <h2>5️⃣ Create a WhatsApp Group</h2>
+        
+       <p>This is crucial for communication. Create a group chat where you can:</p>
+       <p>✅ Confirm who’s coming.</p>
+       <p>✅ Share details (location, time, setlists, etc.).</p>
+       <p>✅ Discuss what instruments and gear are needed.</p>
+       <p>✅ Keep the hype going before and after the session!</p>
+        
+        
+        <h2>6️⃣ Fill Out the Form & Share!</h2>
+        
+        <p>Once you’ve got everything planned, fill in the form and share it with other musicians. Your session is now official! 🎤🔥</p>
+        
+       <h2 style="text-align: center;"> 🎶 Now, let the music take over! 🎶</h2>
+    
+</div>
+    <div class="container session2">
+        <h2>Create a Jam Session</h2>
+        <form>
+            <label for="name">Name and Surname</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="place">Location (Full Address)</label>
+            <input type="text" id="place" name="place" required>
+            
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time (From - To)</label>
+            <input type="time" id="time_from" name="time_from" required>
+            <input type="time" id="time_to" name="time_to" required>
+            
+            <label for="max_people">Maximum People Allowed</label>
+            <input type="number" id="max_people" name="max_people" required>
+            
+            <label for="jam_type">Type of Jam Session</label>
+            <select id="jam_type" name="jam_type" required>
+                <option value="rock">Rock</option>
+                <option value="jazz">Jazz</option>
+                <option value="blues">Blues</option>
+                <option value="funk">Funk</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="whatsapp">WhatsApp Group Link</label>
+            <input type="url" id="whatsapp" name="whatsapp" required>
+            
+            <button type="submit">Create Session</button>
+        </form>
+    </div>
+</body>
+<footer class="footer">
+    <p>&copy; 2025 Loud & Found. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+    </div>
+</footer>
+</html>
