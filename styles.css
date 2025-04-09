@@ -150,6 +150,14 @@ body {
     line-height: 1.5;
 }
 
+.content-image{
+    width: 33%;
+}
+
+.management-pic{
+    width: 100%;
+}
+
 .small-images {
     display: flex;
     gap: 10px;
@@ -199,7 +207,13 @@ html, body {
     flex: 1;
 }
 
-/* Dropdown Bootstrap adjustements*/
+.dropdown-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
 .dropdown-center .btn {
     background-color: purple; 
     color: #f2c185; 
@@ -214,9 +228,14 @@ html, body {
 }
 
 .dropdown-menu {
-    color: transparent;
-    right: 0; 
-    left: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Optional */
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+    z-index: 1000;
 }
 
 .dropdown-menu .dropdown-item {
@@ -228,10 +247,6 @@ html, body {
     color: black;
 }
 
-
-/* Bootstrap end*/
-
-/* Event Gallery Grid */
 .event-gallery {
     display: flex;
     justify-content: center;
@@ -241,7 +256,7 @@ html, body {
     margin-top: 50px;
 }
 
-/* Individual Event Box */
+/* Event Box Styles */
 .event-box {
     position: relative;
     width: 300px; 
@@ -266,6 +281,7 @@ html, body {
     padding: 10px;
     transition: transform 0.3s ease;
 }
+
 
 .title-date {
     display: flex;
@@ -303,7 +319,6 @@ html, body {
     transform: scale(1.05);
 }
 
-/* Corporate Sections */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -367,7 +382,6 @@ html, body {
     color: #d4d4d4;
 }
 
-/* About Section */
 .about {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -376,27 +390,54 @@ html, body {
     border-radius: 10px;
     text-align: center;
     margin: 50px auto;
-}
-
-.about h2 {
+  }
+  
+  .about h2 {
     font-size: 28px;
     margin-bottom: 15px;
     text-transform: uppercase;
     color: #F2A35E;
-}
-
-.about p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #d4d4d4;
-    margin-bottom: 20px;
-}
-
-.about img {
-    max-width: 100%;
-    height: auto;
+  }
+  
+  .vision-mission {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* stacks on smaller screens */
+  }
+  
+  .box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
     border-radius: 10px;
-}
+    width: 45%;
+    text-align: left;
+  }
+  
+  .box h3 {
+    color: #F2A35E;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    color: #d4d4d4;
+    font-size: 17px;
+  }
+
+  .values h4 a{
+font-size: 16px;
+color: #F2A35E;
+text-transform: uppercase;
+  }
+
+  .values h4 a:hover{
+    font-size: 16px;
+    color: #ff9335;
+    text-transform: uppercase;
+      }
+   
+  
 
 /* Events Section */
 .events {
@@ -418,10 +459,15 @@ html, body {
 
 .event-grid {
     display: flex;
-    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    /* Layout settings */
+    max-width: 100%;
 }
 
 .event-card {
@@ -429,8 +475,10 @@ html, body {
     padding: 20px;
     border-radius: 10px;
     width: 250px;
+    flex: 0 0 auto; /* Prevent shrinking, allow scrolling */
     text-align: center;
     transition: transform 0.3s ease;
+    scroll-snap-align: start;
 }
 
 .event-card:hover {
@@ -469,7 +517,20 @@ html, body {
     background-color: #5c0ba5;
 }
 
-/* Social Media Section */
+.event-grid::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.event-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.event-grid::-webkit-scrollbar-thumb {
+    background: #F2A35E;
+    border-radius: 10px;
+}
+
 .social {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -541,6 +602,7 @@ html, body {
 
 .info h2 {
     font-size: 30px;
+    color: #F2A35E;
 }
 
 .contact-form {
@@ -625,6 +687,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 @media (max-width: 768px) {
     .dropdown-center {
         top: 5px;
@@ -635,4 +698,10 @@ html {
         padding: 8px 12px;
         font-size: 14px;
     }
+
+    .event-gallery {
+        gap: 20px;
+    }
+
+
 }
