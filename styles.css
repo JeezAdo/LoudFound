@@ -231,7 +231,7 @@ html, body {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Optional */
+    background-color: rgba(0, 0, 0, 0.9); 
     padding: 10px;
     border-radius: 8px;
     list-style: none;
@@ -256,7 +256,6 @@ html, body {
     margin-top: 50px;
 }
 
-/* Event Box Styles */
 .event-box {
     position: relative;
     width: 300px; 
@@ -427,7 +426,7 @@ color: #F2A35E;
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
-    flex-wrap: wrap; /* stacks on smaller screens */
+    flex-wrap: wrap;
   }
   
   .box {
@@ -460,9 +459,6 @@ text-transform: uppercase;
     text-transform: uppercase;
       }
    
-  
-
-/* Events Section */
 .events {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -488,8 +484,6 @@ text-transform: uppercase;
     padding: 20px 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-
-    /* Layout settings */
     max-width: 100%;
 }
 
@@ -498,7 +492,7 @@ text-transform: uppercase;
     padding: 20px;
     border-radius: 10px;
     width: 250px;
-    flex: 0 0 auto; /* Prevent shrinking, allow scrolling */
+    flex: 0 0 auto; 
     text-align: center;
     transition: transform 0.3s ease;
     scroll-snap-align: start;
