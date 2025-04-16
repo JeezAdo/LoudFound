@@ -359,7 +359,7 @@ html, body {
     padding: 15px;
     border-radius: 10px;
     width: 150px;
-    height: 210px;
+    height: auto;
 }
 
 .team-member img {
@@ -381,6 +381,29 @@ html, body {
     font-size: 14px;
     color: #d4d4d4;
 }
+
+.team-member .valuesteam {
+color: #F2A35E;
+
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .photo-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .photo-link {
+    text-decoration: none;
+  }
 
 .about {
     width: 80%;
